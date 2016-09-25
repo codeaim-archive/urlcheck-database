@@ -1,0 +1,1 @@
+DELETE FROM "check" WHERE user_id = (SELECT id FROM "user" WHERE "user".username = 'gdownes')
