@@ -14,5 +14,6 @@ CREATE TABLE IF NOT EXISTS "check" (
   interval         INT           NOT NULL,
   confirming       BOOLEAN       NOT NULL,
   version          BIGINT        NOT NULL,
-  disabled         TIMESTAMP     NULL
+  disabled         TIMESTAMP     NULL,
+  interval         BOOLEAN       NOT NULL
 );
