@@ -13,5 +13,6 @@ CREATE TABLE IF NOT EXISTS "check" (
   locked           TIMESTAMP     NULL,
   interval         INT           NOT NULL,
   confirming       BOOLEAN       NOT NULL,
-  version          BIGINT        NOT NULL
+  version          BIGINT        NOT NULL,
+  disabled         TIMESTAMP     NULL
 );

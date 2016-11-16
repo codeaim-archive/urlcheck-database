@@ -12,3 +12,11 @@ BEGIN
   END IF;
 END;
 $$;
+
+DO $$
+BEGIN
+  IF NOT EXISTS (SELECT 1 FROM pg_class WHERE relname = 'header_check_name_unique') THEN
+    CREATE UNIQUE INDEX header_check_name_unique ON "header"("check_id", "name");
+  END IF;
+END;
+$$;
